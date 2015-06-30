@@ -20,8 +20,8 @@ angular.module('flock.select2.themes', []).run(['$templateCache', function($temp
   $templateCache.put('bootstrap-material/match-multiple.tpl.html',
     "<span class=\"ui-select-match\">\n" +
     "  <span ng-repeat=\"$item in $select.selected\">\n" +
-    "    <span \n" +
-    "      class=\"ui-select-match-item btn btn-default btn-xs\"\n" +
+    "    <span\n" +
+    "      class=\"ui-select-match-item btn btn-link btn-xs\"\n" +
     "      tabindex=\"-1\"\n" +
     "      type=\"button\"\n" +
     "      ng-disabled=\"$select.disabled\"\n" +
@@ -39,15 +39,15 @@ angular.module('flock.select2.themes', []).run(['$templateCache', function($temp
   $templateCache.put('bootstrap-material/match.tpl.html',
     "<div class=\"ui-select-match\" ng-hide=\"$select.open\" ng-disabled=\"$select.disabled\" ng-class=\"{'btn-default-focus':$select.focus}\">\n" +
     "  <span tabindex=\"-1\"\n" +
-    "      class=\"btn btn-default form-control ui-select-toggle\"\n" +
+    "      class=\"btn btn-link form-control ui-select-toggle\"\n" +
     "      aria-label=\"{{ $select.baseTitle }} activate\"\n" +
-    "      ng-disabled=\"$select.disabled\" \n" +
+    "      ng-disabled=\"$select.disabled\"\n" +
     "      ng-click=\"$select.activate()\"\n" +
     "      style=\"outline: 0;\">\n" +
     "    <span ng-show=\"$select.isEmpty()\" class=\"ui-select-placeholder text-muted\">{{$select.placeholder}}</span>\n" +
     "    <span ng-hide=\"$select.isEmpty()\" class=\"ui-select-match-text pull-left\" ng-class=\"{'ui-select-allow-clear': $select.allowClear && !$select.isEmpty()}\" ng-transclude=\"\"></span>\n" +
     "    <i class=\"caret pull-right\" ng-click=\"$select.toggle($event)\"></i>\n" +
-    "    <a ng-show=\"$select.allowClear && !$select.isEmpty()\" aria-label=\"{{ $select.baseTitle }} clear\" style=\"margin-right: 10px\" \n" +
+    "    <a ng-show=\"$select.allowClear && !$select.isEmpty()\" aria-label=\"{{ $select.baseTitle }} clear\" style=\"margin-right: 10px\"\n" +
     "      ng-click=\"$select.clear($event)\" class=\"btn btn-xs btn-link pull-right\">\n" +
     "      <i class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></i>\n" +
     "    </a>\n" +
