@@ -37,7 +37,7 @@ angular.module('flock.select2.themes', []).run(['$templateCache', function($temp
 
 
   $templateCache.put('bootstrap-material/match.tpl.html',
-    "<div class=\"ui-select-match\" ng-hide=\"$select.open\" ng-disabled=\"$select.disabled\" ng-class=\"{'btn-default-focus':$select.focus}\">\n" +
+    "<div class=\"ui-select-match\" ng-hide=\"$select.open\" ng-disabled=\"$select.disabled\" ng-class=\"{'btn-link-focus':$select.focus}\">\n" +
     "  <span tabindex=\"-1\"\n" +
     "      class=\"btn btn-link form-control ui-select-toggle\"\n" +
     "      aria-label=\"{{ $select.baseTitle }} activate\"\n" +
